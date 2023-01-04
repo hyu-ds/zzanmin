@@ -167,9 +167,3 @@ print(A+B)
 print("Hello, World!")
 ```
 print로 출력만 하면 된다
-
-
-
-
-
-
