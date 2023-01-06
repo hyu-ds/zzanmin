@@ -17,7 +17,6 @@ PN = []
 for i in range(len(prime_Num)):
     if M <= prime_Num[i] <=N:
         PN.append(prime_Num[i])
-
 if len(PN) == 0:
     print(-1)
 else:

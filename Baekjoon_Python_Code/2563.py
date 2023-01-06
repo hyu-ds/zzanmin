@@ -15,7 +15,7 @@ if len(sorted_location) == N:
                 if abs(sorted_location[j][1] - sorted_location[i][1]) < 10:
                     minus += (10 + sorted_location[i][0] - sorted_location[j][0]) *  (10 - abs(sorted_location[i][1] - sorted_location[j][1]))
                 else:
-                    pass
+                    continue
     print(100*N-minus)
 
 else:
@@ -25,7 +25,7 @@ else:
                 if abs(sorted_location[j][1] - sorted_location[i][1]) < 10:
                     minus += (10 + sorted_location[i][0] - sorted_location[j][0]) *  (10 - abs(sorted_location[i][1] - sorted_location[j][1]))
                 else:
-                    pass   
+                    continue
     print(100*len(sorted_location)-minus) 
             
 
