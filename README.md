@@ -1,8 +1,8 @@
 # 🔥 이창민의 백준 뿌셔 🔥
 
-<div align="center">
+
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dlckdals0204)](https://solved.ac/dlckdals0204/)
-</div><br>
+<br>
 
 <div align="center">
     <h2> ⚒️ <b>Tech Stacks</b> ⚒️ </h2>
