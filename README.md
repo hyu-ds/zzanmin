@@ -5,7 +5,7 @@
 <br>
 
 <h2> ⚒️ <b>Using Language</b> ⚒️ </h2>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=lightyellow">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=gold">
 
 <h2>📄 <b>Detail</b> 📄</h2>
 <a href="https://sideotod.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/Tistroy-000000?&logo=Tistory&logoColor=white"/></a>    
