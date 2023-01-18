@@ -1,15 +1,12 @@
-def ARR(A, B, arr):
-    for i in range(A, A+10):
-        for j in range(B, B+10):
-            if arr[i][j] == True:
-                arr[i][j] = True
+def Sort(arr):
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] >= arr[j]:
+                (arr[i], arr[j]) = (arr[j], arr[i])
             else:
-                arr[i][j] = False
-    return arr
+                break
+    print(arr)
 
-arr = [[True for col in range(100)] for row in range(100)]
-
-arr = ARR(0, 0, arr)
-
-print(arr)
+arr = [1, 5, 4, 3, 2]
+Sort(arr)
 

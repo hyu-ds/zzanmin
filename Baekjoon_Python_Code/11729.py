@@ -1,5 +1,7 @@
 import sys
 
+## hanoi(n, from, temp, to)
+
 def hanoi(n, a, b, c):
     if n == 1:
         print(a, c)
