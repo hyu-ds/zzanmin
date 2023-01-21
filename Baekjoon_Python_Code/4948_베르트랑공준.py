@@ -1,6 +1,6 @@
 import sys
 
-def isprime(n, arr):  
+def isprime(n, arr, number):  
     primes = []
     for i in range(2, (2*n)+1):
         if arr[i]:
@@ -8,11 +8,16 @@ def isprime(n, arr):
                 arr[j] = False
             if i > n:
                 primes.append(i)
-    print(len(primes))
+    number.append(len(primes))
 
 arr = [False]*2 + [True]*(2*123456-1)
+Number = []
 while True:
     n = int(sys.stdin.readline())
     if n == 0:
         break
-    isprime(n, arr)
+    isprime(n, arr, Number)
+for i in range(len(Number)):
+    print(Number[i])
+    
+    
