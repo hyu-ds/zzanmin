@@ -1,2 +1,2 @@
-lst = list(str("Hello"))
-print(lst[0])
+ps = "["
+print(ps == "(")

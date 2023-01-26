@@ -1,40 +1,29 @@
 import sys
 
-def check(stack, A, B, C):
-    if isempty(stack):
-        pass    
+def isVPS(stack):
+    count = 0
+    isvps = True
+    if len(stack)%2 != 0:
+        isvps = False
     else:
-        if stack[-1] == "(":
-            A += 1
+        for i in range(len(stack)):
+            if stack[-1] == ")":
+                count += 1
+            else:
+                count -= 1
             stack.pop()
-        else:
-            B += 1
-            stack.pop()
-        return A, B, C
-
-def isempty(stack):
-    if len(stack) == 0:
-        return True
-    else:
-        return False
+            if count < 0:
+                isvps = False
+                break
+        if count != 0:
+            isvps = False
+    return isvps
 
 T = int(sys.stdin.readline())
-
+stack = []
 for i in range(T):
-    PS = list(sys.stdin.readline().strip('\n'))
-    A_ = 0
-    B_ = 0
-    isVPS = False
-    for j in range(len(PS)):
-        A = 0
-        B = 0
-        C = False
-        returnvalues = check(PS, A, B, C)
-        A_ += int(returnvalues[0])
-        B_ += int(returnvalues[1])
-    if A_ == B_:
-        isVPS = True
-    if isVPS:
+    stack = list(sys.stdin.readline().strip('\n'))
+    if isVPS(stack):
         print("YES")
     else:
         print("NO")
