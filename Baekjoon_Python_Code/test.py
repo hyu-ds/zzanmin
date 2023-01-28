@@ -1,2 +1,4 @@
-ps = "["
-print(ps == "(")
+import sys
+input = sys.stdin.readline
+N = input().rstrip()
+print(N)
