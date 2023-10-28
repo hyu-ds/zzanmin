@@ -1,4 +1,2 @@
-import sys
-input = sys.stdin.readline
-N = input().rstrip()
-print(N)
+S = "ABC"
+print(S[0])

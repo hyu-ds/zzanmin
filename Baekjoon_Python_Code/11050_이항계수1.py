@@ -9,4 +9,4 @@ def factorials(a):
 A = factorials(N)
 B = factorials(K)
 C = factorials(N-K)
-print(int(A/(B*C))%10007)
+print(int(A/(B*C)))
