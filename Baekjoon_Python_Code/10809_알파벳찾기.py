@@ -14,4 +14,3 @@ for i in range(len(s)-1):
 
 for j in range(ord("a"), ord("z")+1):
     print(alphabet[chr(j)], end=' ')
-
